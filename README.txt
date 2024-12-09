@@ -41,6 +41,5 @@ Buy Orders: 0, Sell Orders: 1
 Trade Executed: 10 units at 100
 Buy Orders: 1, Sell Orders: 0
 
-Accessing the Full Code: The complete source code is available on GitHub: 
-[Exchange Order Matching Repository](https://github.com/heeehe/Excgange_order_matching)
+Accessing the Full Code: The complete source code is available on GitHub: https://github.com/heeehe/Excgange_order_matching
 
