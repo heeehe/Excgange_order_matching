@@ -1,5 +1,7 @@
 #include "../src/OrderBook.h"
 #include <cassert>
+#include <iostream>
+
 
 void testOrderMatching() {
     OrderBook orderBook;
