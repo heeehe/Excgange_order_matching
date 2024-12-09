@@ -7,8 +7,8 @@
 
 class OrderBook {
 private:
-    std::priority_queue<Order> buyOrders;
-    std::priority_queue<Order, std::vector<Order>, std::greater<>> sellOrders;
+    std::priority_queue<Order> buyOrders; // Defaults to max-heap for BUY orders
+    std::priority_queue<Order, std::vector<Order>, std::greater<>> sellOrders; // Min-heap for SELL orders
 
 public:
     void addOrder(const Order& order);
@@ -17,3 +17,4 @@ public:
 };
 
 #endif
+

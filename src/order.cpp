@@ -6,9 +6,15 @@ Order::Order(int id, OrderType t, double p, int q)
 }
 
 bool Order::operator<(const Order& other) const {
-    if (type == BUY) {
+    if (type == OrderType::BUY) {
         return price < other.price || (price == other.price && timestamp > other.timestamp);
-    } else {
+    } else { // SELL orders
         return price > other.price || (price == other.price && timestamp > other.timestamp);
     }
 }
+
+bool Order::operator>(const Order& other) const {
+    return other < *this;
+}
+
+

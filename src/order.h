@@ -16,7 +16,10 @@ public:
 
     Order(int id, OrderType t, double p, int q);
 
-    bool operator<(const Order& other) const; // For priority queues
+    // Comparison operator for priority queue
+    bool operator<(const Order& other) const;
+    bool operator>(const Order& other) const;
 };
 
 #endif
+
